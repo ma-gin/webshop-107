@@ -27,7 +27,7 @@ const changeVisibility = () =>{
 
 const changeColor = () =>{
     const price = document.querySelectorAll(".price") //returns object
-    const colorArray = ["green", "red", "blue", "black", "yellow", "coral"]
+    const colorArray = ["green", "red", "lightgreen", "black", "yellow", "coral"]
     const randomIndex = Math.ceil(Math.random() * 6)
     // console.log(randomIndex)
     // console.log(typeof price[0])
