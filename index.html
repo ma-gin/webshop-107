@@ -4,15 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="main.js" defer></script>
     <title>SmartMobile</title>
+
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        button{
+            width: 50px;
+            background-color: hsla(208, 14%, 73%, 0.349);
+            opacity: 0.8;
+            padding: 1rem;
+            border-radius: 10%;
+        }
+        button:hover{
+            background-color: rgba(105, 102, 102, 0.247);
+        }
+        h1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: hsla(210, 6%, 51%, 0.99);
+            margin: 0 auto;
+        }
+        footer{
+            margin-top: 2rem;
+            display: flex;
+        }
+        footer > div{
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        #name{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        .top-products{
+            margin: 0 auto;
+        }
+        .buttons{
+            margin: 1rem auto;
+        }
+        .top-product{
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .top-product > a{
+            padding: 1rem;
+            background-color: hsla(208, 86%, 36%, 0.05);
+            width: 300px;
+        }
+        .top-product > a:hover{
+            background-color: hsla(208, 100%, 95%, 0.95);
+            color: gray;
+        }
+        .top-product > img{
+            max-height: 70px;
+            cursor: pointer;
+        }
+        .top-product > img:hover{
+            max-height: 150px;
+        }
+        .nokia-img{
+            margin: 0 25px 0 25px;
+        }
+        .red{
+            font-size: 1.1rem;
+            color: red;
+        }
+        .description{
+            margin: 0 1rem;
+        }
+        .message-board{
+            margin: 1.5rem auto;
+        }
+        .message-board > form{
+            margin: 2rem;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
     <h1 id="name">Smart Mobile</h1>
+    <section class="buttons">
+        <button onclick="changeH1()">7</button>
+        <button onclick="changeBackground()">8</button>
+        <button onclick="changeAddress()">9</button>
+        <button onclick="addClassToLinks()">10</button>
+        <button onclick="changeVisibility()">11</button>
+        <button onclick="changeColor()">12</button>
+    </section>
     <section class="top-products">
         <h3>Top Products</h3>
-        <div class="top-product center">
+        <div class="top-product">
             <a class="link" href="https://www.amazon.pl/Samsung-Galaxy-A52-5G-Czarny/dp/B08TCDK8Y2/ref=sr_1_3?__mk_pl_PL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=samsung+a52&qid=1638888796&sr=8-3" target=”_blank”>Samsung Galaxy A52 5G</a>
             <img src="https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/3/pr_2021_3_16_17_12_13_473_00.jpg" alt="Photo Samsung Galaxy A52 5G"/>
             <div class="description">Pretty Good Phone</div>
@@ -49,14 +148,6 @@
             <input type="text">
             <input type="submit" id="user-input" value="Send">
         </form>
-    </section>
-    <section class="buttons">
-        <button onclick="changeH1()">7</button>
-        <button onclick="changeBackground()">8</button>
-        <button onclick="changeAddress()">9</button>
-        <button onclick="addClassToLinks()">10</button>
-        <button onclick="changeVisibility()">11</button>
-        <button onclick="changeColor()">12</button>
     </section>
     <footer>
         <div id="address">
